@@ -1,0 +1,93 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  padding: 5px;
+  border: 1px solid #000;
+}
+
+#content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+}
+
+#content h2 {
+  margin-top: 0;
+}
+
+/* Background colors for specific tabs */
+nav a[href="summary.html"] {
+  background-color: purple;
+}
+
+nav a[href="about.html"] {
+  background-color: cyan;
+}
+
+nav a[href="mammals.html"] {
+  background-color: green;
+}
+
+nav a[href="reptiles.html"] {
+  background-color: tan;
+}
+
+nav a[href="birds.html"] {
+  background-color: grey;
+}
+
+nav a[href="fish.html"] {
+  background-color: blue;
+}
+
+nav a[href="amphibians.html"] {
+  background-color: magenta;
+}
+
+/* Position the tabs at the top */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 9999;
+}
+
+/* Adjust spacing for the content */
+body {
+  padding-top: 50px;
+}
+
+/* Scrollable content area */
+#content {
+  height: calc(100vh - 50px);
+  overflow-y: scroll;
+}
